@@ -1,6 +1,5 @@
-FROM orangelabschina/nginx-unprivileged:latest
-
-#FROM nginx
+FROM orangelabschina/nginx-unprivileged:latest 
+#FROM centos/nginx-112-centos7
 
 WORKDIR /app
 COPY ./dist /app
