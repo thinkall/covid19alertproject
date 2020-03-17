@@ -1,6 +1,6 @@
 # FROM nginx as production-stage
 FROM nginx 
-RUN mkdir /app
+WORKDIR /app
 COPY ./dist /app
 COPY nginx.conf /etc/nginx/nginx.conf
 
